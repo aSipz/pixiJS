@@ -44,4 +44,8 @@ export class Background {
             this.move(sprite, offset);
         });
     }
+
+    destroy() {
+        this.container.destroy();
+    }
 }

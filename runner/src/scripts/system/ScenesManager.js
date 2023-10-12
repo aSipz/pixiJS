@@ -10,7 +10,7 @@ export class ScenesManager {
 
     start(scene) {
         if (this.scene) {
-            this.scene.remove();
+            this.scene.destroy();
         }
 
         this.scene = new App.config.scenes[scene]();
